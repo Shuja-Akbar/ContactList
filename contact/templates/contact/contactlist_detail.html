@@ -1,0 +1,35 @@
+{% extends 'contact/base.html' %}
+
+{% block body %}
+<!--<table class="table">-->
+<!--  <thead class="thead-dark">-->
+<!--    <tr>-->
+<!--      <th scope="col">Column No.</th>-->
+<!--      <th scope="col">User Name</th>-->
+<!--      <th scope="col">Email Address</th>-->
+<!--      <th scope="col">Phone No#</th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+
+<!--  {% if latest_question_list %}-->
+<!--    {% for question in latest_question_list %}-->
+<!--        <tr>-->
+<!--          <th scope="row">{{question.id}}</th>-->
+<!--          <td>{{question.userName}}</td>-->
+<!--          <td>{{question.emailName}}</td>-->
+<!--          <td>{{question.passName}}</td>-->
+<!--        </tr>-->
+<!--    {% endfor %}-->
+<!--  {% else %}-->
+<!--  <p>No contacts are available.</p>-->
+<!--{% endif %}-->
+<!--  </tbody>-->
+<!--</table>-->
+<h1>Contact Detail Page</h1><br><br>
+<label id="name">Name: {{object.name}}</label><br>
+<label>Phone: {{object.phone}}</label><br>
+<label>Email: {{object.email}}</label><br>
+<label>Address: {{object.address}}</label><br>
+
+{% endblock %}

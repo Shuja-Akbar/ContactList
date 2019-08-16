@@ -1,0 +1,32 @@
+[
+  {
+    "model": "contact.ContactList",
+    "pk": 1,
+    "fields": {
+      "name": "Shuja Ahmad",
+      "email": "ahmad@gmail.com",
+      "phone": "123123123",
+      "address": "asdasdasd"
+    }
+  },
+  {
+    "model": "contact.ContactList",
+    "pk": 2,
+    "fields": {
+      "name": "Adil Malik",
+      "email": "shuja@gmail.com",
+      "phone": "123123123",
+      "address": "asdasdasd"
+    }
+  },
+  {
+    "model": "contact.ContactList",
+    "pk": 3,
+    "fields": {
+      "name": "Adnan",
+      "email": "ahmad@gmail.com",
+      "phone": "123123123",
+      "address": "asdasdasd"
+    }
+  }
+]

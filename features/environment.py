@@ -1,0 +1,26 @@
+from selenium import webdriver
+from contact.models import ContactList
+
+
+def before_all(context):
+    # PhantomJS is used there (headless browser - meaning we can execute tests in a command-line environment,
+    # which is what we want for use with SemaphoreCI For debugging purposes, you can use the Firefox driver instead.
+
+    context.browser = webdriver.Chrome('/home/shuja/chromedriver')
+    context.browser.implicitly_wait(1)
+    context.server_url = 'http://localhost:8000'
+
+
+def after_all(context):
+    # Explicitly quits the browser, otherwise it won't once tests are done
+    context.browser.quit()
+
+
+def before_feature(context, feature):
+    context.browser = webdriver.Chrome('/home/shuja/chromedriver')
+    context.browser.implicitly_wait(1)
+    context.server_url = 'http://localhost:8000'
+
+
+def before_scenario(context, scenario):
+    context.fixtures = ['contacts.json']
